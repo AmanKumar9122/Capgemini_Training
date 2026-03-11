@@ -1,0 +1,9 @@
+Functional Interface
+1. Predicate -> test()
+2. Supplier -> get()
+3. Function -> apply()
+4. Consumer -> accept()
+5. Runnable -> run()
+6. Comparable -> CompareTo()
+7. Comparator -> Compare()
+

@@ -1,0 +1,23 @@
+public class Employee {
+
+    private int id;
+    private String name;
+    private String department;
+    private String jobTitle;
+    private int age;
+    private int yearsOfExperience;
+    private double salary;
+    private int performanceRating;
+}
+
+Task 1:
+Implement a program that reads a list of Employee objects from the user and performs the following operations:
+Filter out all employees who are managers and have a salary greater than 1,00,000, but have joined in the last 3 years.
+Sort the remaining employees in descending order of their years of experience, and then by their performance ratings in ascending order.
+Return a new list containing the names of the remaining employees, but with each name reversed and in uppercase.
+
+Task 2:
+Create a program that takes a list of Employee objects as input and performs the following operations:
+Filter out all employees who have joined in the last 5 years and have a performance rating of less than 8, but have a salary between 60,000 and 120,000.
+Sort the remaining employees in ascending order of their salaries, and then by their years of experience in descending order.
+Return a new list containing the IDs of the remaining employees, but with each ID multiplied by 10.
