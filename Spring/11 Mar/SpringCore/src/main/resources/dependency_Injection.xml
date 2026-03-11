@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="book1" class="dependency_Injection.Book">
+        <property name="id" value="1"/>
+        <property name="title" value="Spring in Action"/>
+        <property name="author" value="Craig Walls"/>
+    </bean>
+
+    <bean id="book2" class="dependency_Injection.Book">
+        <property name="id" value="2"/>
+        <property name="title" value="Clean Code"/>
+        <property name="author" value="Robert C. Martin"/>
+    </bean>
+
+    <bean id="book3" class="dependency_Injection.Book">
+        <property name="id" value="3"/>
+        <property name="title" value="Effective Java"/>
+        <property name="author" value="Joshua Bloch"/>
+    </bean>
+
+    <bean id="library" class="dependency_Injection.Library">
+        <property name="id" value="1"/>
+        <property name="name" value="City Library"/>
+
+        <property name="books">
+            <list>
+                <ref bean="book1"/>
+                <ref bean="book2"/>
+                <ref bean="book3"/>
+            </list>
+        </property>
+    </bean>
+
+</beans>
